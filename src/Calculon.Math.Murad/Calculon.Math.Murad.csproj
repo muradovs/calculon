@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5E74BD97-C6D7-42FC-BBDF-62C5E999801F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Calculon.Math.Murad</RootNamespace>
+    <AssemblyName>Calculon.Math.Murad</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile158</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .NET Framework is automatically included -->
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Operations\Abs\AbsBuilder.cs" />
+    <Compile Include="Operations\Abs\AbsDefinition.cs" />
+    <Compile Include="Operations\Associativity.cs" />
+    <Compile Include="Operations\BinaryOperation.cs" />
+    <Compile Include="Operations\BinaryOperationBuilder.cs" />
+    <Compile Include="CalculableExpression.cs" />
+    <Compile Include="ExpressionParser.cs" />
+    <Compile Include="ExpressionStack.cs" />
+    <Compile Include="IExpression.cs" />
+    <Compile Include="OperationPriorityComparer.cs" />
+    <Compile Include="Operations\AbsBrackets\AbsBrackets.cs" />
+    <Compile Include="Operations\AbsBrackets\AbsBracketsBuilder.cs" />
+    <Compile Include="Operations\AbsBrackets\AbsBracketsDefinition.cs" />
+    <Compile Include="Operations\AbsBrackets\AbsBracketsToken.cs" />
+    <Compile Include="Operations\Abs\AbsToken.cs" />
+    <Compile Include="Operations\Acos\Acos.cs" />
+    <Compile Include="Operations\Acos\AcosBuilder.cs" />
+    <Compile Include="Operations\Acos\AcosDefinition.cs" />
+    <Compile Include="Operations\Acos\AcosToken.cs" />
+    <Compile Include="Operations\Actan\Actan.cs" />
+    <Compile Include="Operations\Actan\ActanBuilder.cs" />
+    <Compile Include="Operations\Actan\ActanDefinition.cs" />
+    <Compile Include="Operations\Actan\ActanToken.cs" />
+    <Compile Include="Operations\Asin\Asin.cs" />
+    <Compile Include="Operations\Asin\AsinBuilder.cs" />
+    <Compile Include="Operations\Asin\AsinDefinition.cs" />
+    <Compile Include="Operations\Asin\AsinToken.cs" />
+    <Compile Include="Operations\Atan\Atan.cs" />
+    <Compile Include="Operations\Atan\AtanBuilder.cs" />
+    <Compile Include="Operations\Atan\AtanDefinition.cs" />
+    <Compile Include="Operations\Atan\AtanToken.cs" />
+    <Compile Include="Operations\BinaryOperationDefinition.cs" />
+    <Compile Include="Operations\Brackets\Brackets.cs" />
+    <Compile Include="Operations\Brackets\BracketsBuilder.cs" />
+    <Compile Include="Operations\Brackets\BracketsDefinition.cs" />
+    <Compile Include="Operations\Brackets\BracketsToken.cs" />
+    <Compile Include="Operations\ConstantDefinition.cs" />
+    <Compile Include="Operations\Cos\Cos.cs" />
+    <Compile Include="Operations\Cos\CosBuilder.cs" />
+    <Compile Include="Operations\Cos\CosDefinition.cs" />
+    <Compile Include="Operations\Cos\CosToken.cs" />
+    <Compile Include="Operations\Ctan\Ctan.cs" />
+    <Compile Include="Operations\Ctan\CtanBuilder.cs" />
+    <Compile Include="Operations\Ctan\CtanDefinition.cs" />
+    <Compile Include="Operations\Ctan\CtanToken.cs" />
+    <Compile Include="Operations\Divide\Divide.cs" />
+    <Compile Include="Operations\Divide\DivideBuilder.cs" />
+    <Compile Include="Operations\Divide\DivideDefinition.cs" />
+    <Compile Include="Operations\Divide\DivideToken.cs" />
+    <Compile Include="Operations\E\E.cs" />
+    <Compile Include="Operations\E\EBuilder.cs" />
+    <Compile Include="Operations\E\EDefinition.cs" />
+    <Compile Include="Operations\E\EToken.cs" />
+    <Compile Include="Operations\FunctionDefinition.cs" />
+    <Compile Include="Operations\FunctionDefinition1.cs" />
+    <Compile Include="Operations\FunctionDefinition2.cs" />
+    <Compile Include="Operations\IOperation.cs" />
+    <Compile Include="Operations\IOperationBuilder.cs" />
+    <Compile Include="Operations\IOperationDefinition.cs" />
+    <Compile Include="Operations\IOperationToken.cs" />
+    <Compile Include="Operations\Lg\Lg.cs" />
+    <Compile Include="Operations\Lg\LgBuilder.cs" />
+    <Compile Include="Operations\Lg\LgDefinition.cs" />
+    <Compile Include="Operations\Lg\LgToken.cs" />
+    <Compile Include="Operations\Ln\Ln.cs" />
+    <Compile Include="Operations\Ln\LnBuilder.cs" />
+    <Compile Include="Operations\Ln\LnDefinition.cs" />
+    <Compile Include="Operations\Ln\LnToken.cs" />
+    <Compile Include="Operations\Log\Log.cs" />
+    <Compile Include="Operations\Log\LogBuilder.cs" />
+    <Compile Include="Operations\Log\LogDefinition.cs" />
+    <Compile Include="Operations\Log\LogToken.cs" />
+    <Compile Include="Operations\Max\Max.cs" />
+    <Compile Include="Operations\Max\MaxBuilder.cs" />
+    <Compile Include="Operations\Max\MaxDefinition.cs" />
+    <Compile Include="Operations\Max\MaxToken.cs" />
+    <Compile Include="Operations\Minus\Minus.cs" />
+    <Compile Include="Operations\Minus\MinusBuilder.cs" />
+    <Compile Include="Operations\Minus\MinusDefinition.cs" />
+    <Compile Include="Operations\Minus\MinusToken.cs" />
+    <Compile Include="Operations\Min\Min.cs" />
+    <Compile Include="Operations\Min\MinBuilder.cs" />
+    <Compile Include="Operations\Min\MinDefinition.cs" />
+    <Compile Include="Operations\Min\MinToken.cs" />
+    <Compile Include="Operations\Multiply\Multiply.cs" />
+    <Compile Include="Operations\Multiply\MultiplyBuilder.cs" />
+    <Compile Include="Operations\Multiply\MultiplyDefinition.cs" />
+    <Compile Include="Operations\Multiply\MultiplyToken.cs" />
+    <Compile Include="OpenedUnarOperatorException.cs" />
+    <Compile Include="Operations\OperationFactory.cs" />
+    <Compile Include="Operations\OperationType.cs" />
+    <Compile Include="Operations\ParameterOrder.cs" />
+    <Compile Include="Operations\Pi\Pi.cs" />
+    <Compile Include="Operations\Pi\PiBuilder.cs" />
+    <Compile Include="Operations\Pi\PiDefinition.cs" />
+    <Compile Include="Operations\Pi\PiToken.cs" />
+    <Compile Include="Operations\Plus\Plus.cs" />
+    <Compile Include="Operations\Plus\PlusBuilder.cs" />
+    <Compile Include="Operations\Plus\PlusDefinition.cs" />
+    <Compile Include="Operations\Plus\PlusToken.cs" />
+    <Compile Include="Operations\Power\Power.cs" />
+    <Compile Include="Operations\Power\PowerBuilder.cs" />
+    <Compile Include="Operations\Power\PowerDefinition.cs" />
+    <Compile Include="Operations\Power\PowerToken.cs" />
+    <Compile Include="Operations\Sin\Sin.cs" />
+    <Compile Include="Operations\Sin\SinBuilder.cs" />
+    <Compile Include="Operations\Sin\SinDefinition.cs" />
+    <Compile Include="Operations\Sin\SinToken.cs" />
+    <Compile Include="Operations\Sqrt\Sqrt.cs" />
+    <Compile Include="Operations\Sqrt\SqrtBuilder.cs" />
+    <Compile Include="Operations\Sqrt\SqrtDefinition.cs" />
+    <Compile Include="Operations\Sqrt\SqrtToken.cs" />
+    <Compile Include="Operations\Tan\Tan.cs" />
+    <Compile Include="Operations\Tan\TanBuilder.cs" />
+    <Compile Include="Operations\Tan\TanDefinition.cs" />
+    <Compile Include="Operations\Tan\TanToken.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleExpression.cs" />
+    <Compile Include="Operations\UnaryOperation.cs" />
+    <Compile Include="Operations\UnaryOperationBuilder.cs" />
+    <Compile Include="Singleton.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
